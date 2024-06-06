@@ -73,7 +73,7 @@
     display: none;
   }
   .logo {
-    background-image: url(./mb.png);
+    background-image: url(../mb.png);
     background-size: cover;
     height: 50px;
     width: 50px;
