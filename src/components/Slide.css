@@ -1,0 +1,145 @@
+.slide {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.slide-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.registrate:hover {
+  background-color: #fcc50d;
+}
+.icon {
+  font-size: 2em;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-content {
+  position: relative;
+  width: 50%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+
+    font-weight: 900;
+    font-size: 90px;
+    text-transform: uppercase;
+    font-style: italic;
+    background-image: -webkit-linear-gradient(90deg, #d8912f, #fcc545, #fce596);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    font-family: "Gotham Narrow", sans-serif;
+    letter-spacing: 1.5px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.slide-button {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.slide-button:hover {
+  background-color: #0056b3;
+}
+.App {
+  display: inline-block;
+  position: relative;
+  height: 100vh;
+  background-image: url(/background.jpg); /* Pozadina slidera */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.registrate-box {
+  position: absolute;
+    right: 15%;
+    bottom: 35%;
+    transform: translate(50%, 50%);
+    animation: pulse 3.5s infinite;
+}
+.registrate {
+  
+  padding: 15px 120px;
+ 
+  border: none;
+  cursor: pointer;
+   
+  background: #facc00;
+  border-radius: 6px;
+  border-color: #fbde5e;
+  color: #284755 ;
+  border-radius: 6px;
+  opacity: 0.9;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0px 0px 50px #fbde5e;
+  
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    49% {
+      transform: scale(1);
+    }  
+    50% {
+      transform: scale(.9);
+    }
+    53% {
+      transform: scale(1.1);
+    }
+    60% {
+      transform: scale(.9);
+    }
+    63% {
+      transform: scale(1.1);
+    }
+    70% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @media screen and (max-width:1100px) {
+
+    .slide-content {
+      flex-direction: column;
+  }
+  .registrate-box {
+    position: absolute;
+    right: 13%;
+    bottom: 30%;
+    transform: translate(50%, 50%);
+    width: max-content;
+}
+.btnLng {
+  width: 70%;
+}
+  }
+
+
